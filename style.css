@@ -1,0 +1,18 @@
+body {
+    background-image: url("http://wallpapercave.com/wp/KMptdAR.png");
+}
+.jumbotron {
+    color: white;
+    text-align: center;
+    background-image: url("https://wolfcrow.com/wp-content/uploads/2013/08/RedGradientRec709-960x540.jpg");
+}
+#tribute-info {
+    color: white;
+}
+#career {
+    color: white;
+}
+#img-caption {
+    color: white;
+    text-align: center;
+}
