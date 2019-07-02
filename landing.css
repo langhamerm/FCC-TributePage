@@ -1,0 +1,12 @@
+#home,
+#our-program,
+#contact {
+  display: flex;
+}
+@media (max-width: 650px) {
+  #home,
+  #our-program,
+  #contact {
+    margin-top: 0;
+  }
+}
