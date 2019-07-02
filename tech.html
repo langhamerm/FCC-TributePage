@@ -10,425 +10,242 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <title>FCC: Technical Documentation</title>
+
     <link rel="stylesheet" href="tech.css">
-    
-    <title>FCC: Technical Documentation Page</title>
 </head>
 
 <body>
-    <nav id="navbar">
-        <header>JS Documentation</header>
-        <ul>
-            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-            <li>
-                <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
-            </li>
-            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
-            <li><a class="nav-link" href="#Variables">Variables</a></li>
-            <li>
-                <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
-            </li>
-            <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
-            <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
-            <li><a class="nav-link" href="#Constants">Constants</a></li>
-            <li><a class="nav-link" href="#Data_types">Data types</a></li>
-            <li>
-                <a class="nav-link" href="#if...else_statement">if...else statement</a>
-            </li>
-            <li><a class="nav-link" href="#while_statement">while statement</a></li>
-            <li>
-                <a class="nav-link" href="#Function_declarations">Function declarations</a>
-            </li>
-            <li><a class="nav-link" href="#Reference">Reference</a></li>
-        </ul>
+
+    <nav class="navbar navbar-light bg-light" id="navbar">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <header>Dubstep</header>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li>
+                    <a class="nav-link" href="#Technical">Technical</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Wall_Of_Sound">Wall Of Sound</a>
+                </li>
+                <li><a class="nav-link" href="#Kick_&_Sub">Kick & Sub</a></li>
+                <li><a class="nav-link" href="#Snares_&_Claps">Snares & Claps</a></li>
+                <li>
+                    <a class="nav-link" href="#Swing_Time">Swing Time</a>
+                </li>
+                <li><a class="nav-link" href="#Subsonic_Bass">Subsonic Bass</a></li>
+                <li><a class="nav-link" href="#Low‑end_Techniques">Low‑end Techniques</a></li>
+                <li><a class="nav-link" href="#Pads_&_Leads">Pads & Leads</a></li>
+                <li><a class="nav-link" href="#Recommended_Listening">Recommended Listening</a></li>
+            </ul>
+        </div>
     </nav>
-    <main id="main-doc">
-        <section class="main-section" id="Introduction">
-            <header>Introduction</header>
-            <article>
-                <p>
-                    JavaScript is a cross-platform, object-oriented scripting language. It
-                    is a small and lightweight language. Inside a host environment (for
-                    example, a web browser), JavaScript can be connected to the objects of
-                    its environment to provide programmatic control over them.
-                </p>
 
-                <p>
-                    JavaScript contains a standard library of objects, such as Array, Date,
-                    and Math, and a core set of language elements such as operators, control
-                    structures, and statements. Core JavaScript can be extended for a
-                    variety of purposes by supplementing it with additional objects; for
-                    example:
-                </p>
-                <ul>
-                    <li>
-                        Client-side JavaScript extends the core language by supplying objects
-                        to control a browser and its Document Object Model (DOM). For example,
-                        client-side extensions allow an application to place elements on an
-                        HTML form and respond to user events such as mouse clicks, form input,
-                        and page navigation.
-                    </li>
-                    <li>
-                        Server-side JavaScript extends the core language by supplying objects
-                        relevant to running JavaScript on a server. For example, server-side
-                        extensions allow an application to communicate with a database,
-                        provide continuity of information from one invocation to another of
-                        the application, or perform file manipulations on a server.
-                    </li>
-                </ul>
-            </article>
-        </section>
-        <section class="main-section" id="What_you_should_already_know">
-            <header>What you should already know</header>
-            <article>
-                <p>This guide assumes you have the following basic background:</p>
-
-                <ul>
-                    <li>
-                        A general understanding of the Internet and the World Wide Web (WWW).
-                    </li>
-                    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-                    <li>
-                        Some programming experience. If you are new to programming, try one of
-                        the tutorials linked on the main page about JavaScript.
-                    </li>
-                </ul>
-            </article>
-        </section>
-        <section class="main-section" id="JavaScript_and_Java">
-            <header>JavaScript and Java</header>
-            <article>
-                <p>
-                    JavaScript and Java are similar in some ways but fundamentally different
-                    in some others. The JavaScript language resembles Java but does not have
-                    Java's static typing and strong type checking. JavaScript follows most
-                    Java expression syntax, naming conventions and basic control-flow
-                    constructs which was the reason why it was renamed from LiveScript to
-                    JavaScript.
-                </p>
-
-                <p>
-                    In contrast to Java's compile-time system of classes built by
-                    declarations, JavaScript supports a runtime system based on a small
-                    number of data types representing numeric, Boolean, and string values.
-                    JavaScript has a prototype-based object model instead of the more common
-                    class-based object model. The prototype-based model provides dynamic
-                    inheritance; that is, what is inherited can vary for individual objects.
-                    JavaScript also supports functions without any special declarative
-                    requirements. Functions can be properties of objects, executing as
-                    loosely typed methods.
-                </p>
-                <p>
-                    JavaScript is a very free-form language compared to Java. You do not
-                    have to declare all variables, classes, and methods. You do not have to
-                    be concerned with whether methods are public, private, or protected, and
-                    you do not have to implement interfaces. Variables, parameters, and
-                    function return types are not explicitly typed.
-                </p>
-            </article>
-        </section>
-        <section class="main-section" id="Hello_world">
-            <header>Hello world</header>
-            <article>
-                To get started with writing JavaScript, open the Scratchpad and write your
-                first "Hello world" JavaScript code:
-                <code>function greetMe(yourName) { alert("Hello " + yourName); }
-                  greetMe("World");
-                </code>
-
-                Select the code in the pad and hit Ctrl+R to watch it unfold in your
-                browser!
-            </article>
-        </section>
-        <section class="main-section" id="Variables">
-            <header>Variables</header>
-            <p>
-                You use variables as symbolic names for values in your application. The
-                names of variables, called identifiers, conform to certain rules.
-            </p>
-            <p>
-                A JavaScript identifier must start with a letter, underscore (_), or
-                dollar sign ($); subsequent characters can also be digits (0-9). Because
-                JavaScript is case sensitive, letters include the characters "A" through
-                "Z" (uppercase) and the characters "a" through "z" (lowercase).
-            </p>
-            <p>
-                You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers.
-                You can also use the Unicode escape sequences as characters in
-                identifiers. Some examples of legal names are Number_hits, temp99, and
-                _name.
-            </p>
-        </section>
-        <section class="main-section" id="Declaring_variables">
-            <header>Declaring variables</header>
-            <article>
-                You can declare a variable in three ways:
-                <p>
-                    With the keyword var. For example, <code>var x = 42.</code> This syntax
-                    can be used to declare both local and global variables.
-                </p>
-                <p>
-                    By simply assigning it a value. For example, <code>x = 42.</code> This
-                    always declares a global variable. It generates a strict JavaScript
-                    warning. You shouldn't use this variant.
-                </p>
-                <p>
-                    With the keyword let. For example,<code> let y = 13.</code> This syntax
-                    can be used to declare a block scope local variable. See Variable scope
-                    below.
-                </p>
-            </article>
-        </section>
-        <section class="main-section" id="Variable_scope">
-            <header>Variable scope</header>
-            <article>
-                <p>
-                    When you declare a variable outside of any function, it is called a
-                    global variable, because it is available to any other code in the
-                    current document. When you declare a variable within a function, it is
-                    called a local variable, because it is available only within that
-                    function.
-                </p>
-
-                <p>
-                    JavaScript before ECMAScript 2015 does not have block statement scope;
-                    rather, a variable declared within a block is local to the function (or
-                    global scope) that the block resides within. For example the following
-                    code will log 5, because the scope of x is the function (or global
-                    context) within which x is declared, not the block, which in this case
-                    is an if statement.
-                </p>
-                <code>if (true) { var x = 5; } console.log(x); // 5</code>
-                <p>
-                    This behavior changes, when using the let declaration introduced in
-                    ECMAScript 2015.
-                </p>
-
-                <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
-                  defined</code>
-            </article>
-        </section>
-        <section class="main-section" id="Global_variables">
-            <header>Global variables</header>
-            <article>
-                <p>
-                    Global variables are in fact properties of the global object. In web
-                    pages the global object is window, so you can set and access global
-                    variables using the window.variable syntax.
-                </p>
-
-                <p>
-                    Consequently, you can access global variables declared in one window or
-                    frame from another window or frame by specifying the window or frame
-                    name. For example, if a variable called phoneNumber is declared in a
-                    document, you can refer to this variable from an iframe as
-                    parent.phoneNumber.
-                </p>
-            </article>
-        </section>
-        <section class="main-section" id="Constants">
-            <header>Constants</header>
-            <article>
-                <p>
-                    You can create a read-only, named constant with the const keyword. The
-                    syntax of a constant identifier is the same as for a variable
-                    identifier: it must start with a letter, underscore or dollar sign and
-                    can contain alphabetic, numeric, or underscore characters.
-                </p>
-
-                <code>const PI = 3.14;</code>
-                <p>
-                    A constant cannot change value through assignment or be re-declared
-                    while the script is running. It has to be initialized to a value.
-                </p>
-
-                <p>
-                    The scope rules for constants are the same as those for let block scope
-                    variables. If the const keyword is omitted, the identifier is assumed to
-                    represent a variable.
-                </p>
-
-                <p>
-                    You cannot declare a constant with the same name as a function or
-                    variable in the same scope. For example:
-                </p>
-
-                <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
-                  CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
-                  }</code>
-                However, object attributes are not protected, so the following statement
-                is executed without problems.
-                <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code>
-            </article>
-        </section>
-        <section class="main-section" id="Data_types">
-            <header>Data types</header>
-            <article>
-                <p>The latest ECMAScript standard defines seven data types:</p>
-                <ul>
-                    <li>
-                        <p>Six data types that are primitives:</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <main id="main-doc">
+                    <section id="Introduction" class="main-section">
+                        <header>Introduction</header>
+                        <br>
+                        <p>New genres appear on an almost daily basis in electronic music, but few have had the impact
+                            of dubstep. From the grimy nightclubs of Croydon to mainstream radio airplay, via
+                            high‑profile endorsement from acts as disparate as Snoop Dogg and Radiohead, its meteoric
+                            rise is unrivalled. With roots in the predominantly London‑flavoured two‑step and grime
+                            scenes, where experimental garage remixes were often made with FL Studio, dubstep has
+                            evolved its own production values that have set new precedents for the treatment of low‑end
+                            frequencies.</p>
+                        <p>Labels like <code>Tempa</code> and <code>Hyperdub</code> laid the foundations with artists
+                            such as Horsepower
+                            Productions, Kode9, Skream, Benga and Burial. Not to be outdone, Dub Police and Sub Soldiers
+                            exposed us to Caspa and Rusko, two of the scene's most popular international ambassadors;
+                            they play to a weekly global audience of thousands. Throw in Skream's platinum‑selling remix
+                            of La Roux's 'In For The Kill' and you've got yourself a new sonic phenomenon.</p>
+                    </section>
+                    <section id="Technical" class="main-section">
+                        <header>Technical</header>
+                        <br>
+                        <p>Dubstep's main characteristics lie in its rhythms, bass and dark sound, with heavy use of
+                            spatial atmospherics, low‑end frequencies and swing. Initially based around a
+                            garage‑influenced, two‑step kick and snare beat, the genre has evolved over the last few
+                            years, with an increasing number of tracks containing a half‑step rhythm. This has become
+                            the form of dubstep that most people will be familiar with, and it's a characteristic that
+                            distinguishes it from most other dance music.</p>
+                        <p>Dubstep also has many similarities to <code>drum & bass:</code> both rely on the use of
+                            shuffled and
+                            syncopated hi‑hat patterns to give the beats movement, and heavy sub‑bass for warmth and
+                            depth. The tempo of dubstep is generally around the 140bpm mark, which provides potential
+                            for DJs to mix it with breakbeat, whilst an increasing number of drum & bass DJs are using
+                            dubstep in their sets too.</p>
+                        <p>Although there are stylistic similarities between dubstep and drum & bass, the latter has
+                            suffered from stagnation in the past through the over-use of various techniques, samples and
+                            sounds. One of the most exciting elements of dubstep is the freedom to move away from a set
+                            song structure and the reliance on breaks and bass drops. Like most forms of electronic
+                            dance music, a lot of dubstep is created for the dancefloor and produced to be heard on a
+                            loud sound system. Because the music is typically driven by its sub‑bass, it can be hard to
+                            feel the full effect of dubstep on an inferior system such as computer speakers or
+                            earphones.</p>
+                    </section>
+                    <section id="Wall_Of_Sound" class="main-section">
+                        <header>Wall Of Sound</header>
+                        <br>
+                        <p>A key feature of dubstep production is the use of atmospherics and textures to create a full
+                            and spacious mix. The use of silence, pads and minor keys builds tension and expresses
+                            emotion. Even though dubstep is dominated by bass and beats, they are softened by a dub
+                            reggae‑influenced use of echo, reverb and panoramic stereo to add depth and space.</p>
+                        <p>Good examples of these techniques come from drum & bass‑turned‑dubstep duo Kryptic Minds and
+                            Mercury Prize nominee Burial, in particular the latter's use of obscure samples,
+                            pitch‑shifting and overlaying effects. Burial's work is very different to the majority of
+                            commercially successful and dancefloor‑friendly dubstep tracks, and bears a lot of
+                            similarities to works by Brian Eno or Philip Glass.</p>
+                        <p>In my quest to decide what would fit best in an informative dubstep tutorial, I asked
+                            numerous producers, and there was a unanimous verdict: inform people that making dubstep is
+                            more than just automating a filter cutoff to make a 'wobbly' bass line. Although I will look
+                            at how to make the type of wobbly bass line that has become synonymous with the genre, you
+                            only have to investigate my recommended listening (see box) to hear the variety and contrast
+                            dubstep has to offer.</p>
+                    </section>
+                    <section id="Kick_&_Sub" class="main-section">
+                        <header>Kick & Sub</header>
+                        <br>
+                        <p>There is no set method to making dubstep. A lot of tracks are built around their dominant
+                            low‑frequency elements, namely the sub‑bass and kick drum. If you have chosen a sample or
+                            programmed a hook that you think you can be the basis of a dubstep track, by all means work
+                            from that first, but as there is an emphasis on the lower end of the sonic spectrum, it is
+                            essential that you select a kick and sub‑bass that gel together.</p>
+                        <p>As in many electronic styles, drums are commonly created through overlaid samples. Try to
+                            merge contrasting sounds together when making your drum tracks, as the tendency to overlay
+                            similar‑sounding samples will have a negative effect on the sound. And don't be afraid of
+                            variety: try using hip‑hop or house kicks alongside more obviously dubstep‑friendly sounds.
+                            You could even use a pitched‑down basketball bouncing. If a more organic sound is what
+                            you're after, use live or ethnic drum samples. It's always best to have an abundance of
+                            decent drum samples available, as each individual kick, snare or hat sample can completely
+                            change the dynamic of your track, particularly the shuffle and swing aspect.</p>
+                        <p>The use of single or multiple sine waves is a good starting point for making dubstep
+                            sub‑bass. There is no harmonic content in a straight sine wave, and the C0‑C1 octave range
+                            will produce a fundamental frequency sitting at approximately 30‑60Hz. When picking a kick
+                            drum sound, therefore, there is no point in choosing a really bassy 808 kick-drum sample, as
+                            it will not work well with such a sub‑bass. Instead, start with a kick drum that hits higher
+                            up the frequency spectrum than the sub-bass: that way, the two will not sound muddy in the
+                            mix. (You could, of course, use an 808 sample for your sub‑bass itself...)</p>
+                        <p>Aside from selecting elements that match each other, there are several ways of making parts
+                            sit well together in the mix. One of the easiest methods is to use EQ to cut away unwanted
+                            frequency ranges. It's always better to take away frequencies than to boost them; if your
+                            drum sample is lacking low‑end presence, <code>EQ</code> can add it, but it will sound
+                            better if you use
+                            one that has that presence in the first place.</p>
+                        <p>Something that has become quite popular in electronic dance music is the use of a
+                            <code>side‑chained compressor</code> to 'duck' the volume of the sub‑bass when the kick drum
+                            hits. This
+                            is a great way of making sure the kick cuts through in the mix, but it shouldn't be seen as
+                            the be‑all and end‑all, and there are certain techniques that can help it work better. One
+                            such is to duplicate the kick-drum track and use a closed hi‑hat sound instead of a
+                            kick-drum sample to trigger the compressor. A hi‑hat hit has a shorter tail than a kick
+                            drum, meaning that the resulting ducking will be shorter and not sound laboured. To make
+                            sure the hat isn't part of the mix, give it a dedicated channel and mute it from the master
+                            out.</p>
+                    </section>
+                    <section id="Snares_&_Claps" class="main-section">
+                        <header>Snares & Claps</header>
+                        <br>
+                        <p>Reverberated snare drums play heavily in dubstep's make‑up — take Skream's remix of 'In For
+                            The Kill' as an example. To obtain a typical dubstep snare drum, you need to layer a snare
+                            sample, or multiple snare drums, with a clap. A snare drum that punches in at around 200Hz
+                            is a good place to start; the clap will take care of the high end. Then, by using a reverb
+                            effect on the layered samples, you can add the space and width you need. There are no set
+                            parameters for layering snare drums or adding reverb: it's all about defining the sound you
+                            want to create. If you're interested in making club‑friendly dubstep, each aspect will need
+                            to be fine‑tuned and balanced so the mix will sound good on a loud sound system. If you're
+                            hoping to make more expressive or abstract dubstep, the freedom is all yours. You can choose
+                            to use anything you want as a drum sample, and innovation is good.</p>
+                        <p>To illustrate dubstep programming, I've created some example patterns using a basic drum rack
+                            in Ableton Live. As you'll see, I'm using two kick drums — one low and one high — a snare, a
+                            clap, a rimshot, three closed hi‑hats, an open hi‑hat and a ride. These are labelled in the
+                            screenshots.</p>
+                    </section>
+                    <section id="Swing_Time" class="main-section">
+                        <header>Swing Time</header>
+                        <br>
+                        <p>In general, placement of hi‑hats is incredibly important to making your beats shuffle and
+                            swing. Unlike house or techno, dubstep uses a lot of placements on the off‑beat. Although
+                            this can feel unnatural to the ears, the combinations of hats and other percussion samples
+                            can be built up to create excellent beats. Slowly layering elements and making sure they
+                            work well with others can involve a lot of listening and time, particularly if you're using
+                            triplets.</p>
+                        <p>Velocity is also incredibly important in making your beats sound more natural. Even though
+                            your beats might be heavily quantised, not only will changing the velocity help swing, it
+                            can take the edge off highly processed beats. You can also use classic drum breaks chopped
+                            up and layered in with your programmed beats. This technique is standard practice when
+                            making drum & bass, and it can help soften the sound and add movement.</p>
+                    </section>
+                    <section id="Subsonic_Bass" class="main-section">
+                        <header>Subsonic Bass</header>
+                        <br>
+                        <p>I mentioned that sine waves are a good starting point for creating a subby dubstep bass.
+                            Let's look at bass sounds and bass lines in a bit more detail. As a starting point, use a
+                            two‑oscillator synth to generate two sine waves an octave apart, and route both through a
+                            low‑pass filter. Turn the filter resonance up full and slowly move the cutoff anti-clockwise
+                            until you can detect a change in the feel of the bass coming from your speakers. Finding the
+                            right settings for the filter cutoff and resonance will trigger self‑oscillation, making the
+                            bass thicker.</p>
+                        <p>If you want to add brightness to this bass, you can then distort it or add other effects.
+                            Guitar processing and effects plug‑ins are a great method of changing the sound of your bass
+                            and adding distortion, warmth and harmonic content. You can also add movement with an LFO.
+                            Applying a high‑pass filter to most other mix elements, such as leads and pads, will ensure
+                            plenty of space for your sub‑bass.</p>
+                    </section>
+                    <section id="Low‑end_Techniques" class="main-section">
+                        <header>Low‑end Techniques</header>
+                        <br>
+                        <p>Many soft synths will let you use multiple voices for a unison‑style effect, which can
+                            radically change your bass line. Adding multiple voices and detuning them creates rawness,
+                            and is a technique that is used a lot in making the 'reese bass' commonly found in drum &
+                            bass. Another trick is to set the synth that's playing your bass line to monophonic mode,
+                            overlapping the notes in your MIDI sequence, and adding legato and portamento/glide. This
+                            can blend the sound together and give smoother‑sounding note transitions.</p>
+                        <p>Instead of having one single bass line that sounds repetitive, it's also worth experimenting
+                            with creating more than one bass sound. Once you are happy with your bass hook, you can
+                            either chop up the MIDI sequence so that it plays alternating sounds, or bounce each bass
+                            line down to audio and slice them up that way. The variation this provides will help develop
+                            an almost story‑like quality, where one sound will ask a question and the other will answer.
+                        </p>
+                    </section>
+                    <section id="Pads_&_Leads" class="main-section">
+                        <header>Pads & Leads</header>
+                        <br>
+                        <p>Your choice of lead sound can play a vital role in your music. Filling the frequency ranges
+                            throughout your mix is important, so with the sub, kick and snare taking up the low end, the
+                            200‑800Hz mid‑range is a good area for your leads to sit. An extremely wide,
+                            stereo‑intensive sound won't be direct enough — leave the width for your pads and effects.
+                        </p>
+                        <p>Creating a riff or rhythm with your hi‑hats allows you to work well with your leads and
+                            mid‑range bass lines later in the track. If you apply a similar rhythm to the MIDI sequence
+                            of your lead, it will work well with the overall swing of the track. Alternatively, adding a
+                            contrasting rhythm to your lead will help provide the feeling of a shuffle. Playing one
+                            sound off another will also help the narrative element of your track. As with Massive, most
+                            synths will have a wealth of presets to gain ideas from. Choosing complementary sounds when
+                            balancing your leads and bass lines is important. You can apply the same techniques for
+                            leads as for bass lines, such as detuning, glides and automating filter cutoffs.</p>
+                    </section>
+                    <section id="Recommended_Listening" class="main-section">
+                        <header>Recommended Listening</header>
                         <ul>
-                            <li>Boolean. true and false.</li>
-                            <li>
-                                null. A special keyword denoting a null value. Because JavaScript
-                                is case-sensitive, null is not the same as Null, NULL, or any
-                                other variant.
-                            </li>
-                            <li>undefined. A top-level property whose value is undefined.</li>
-                            <li>Number. 42 or 3.14159.</li>
-                            <li>String. "Howdy"</li>
-                            <li>
-                                Symbol (new in ECMAScript 2015). A data type whose instances are
-                                unique and immutable.
-                            </li>
+                            <li>Caspa & Rusko: FabricLive 37 (Fabric)</li>
+                            <li>Benga: Diary Of An Afro Warrior (Tempa)</li>
+                            <li>Burial: Untrue (Hyperdub)</li>
+                            <li>Caspa: Everybody's Talking, Nobody's Listening (Fabric)</li>
+                            <li>Emalkay: 'When I Look At You'/'Angie Got Stoned' (Dub Police)</li>
                         </ul>
-                    </li>
-
-                    <li>and Object</li>
-                </ul>
-                Although these data types are a relatively small amount, they enable you
-                to perform useful functions with your applications. Objects and functions
-                are the other fundamental elements in the language. You can think of
-                objects as named containers for values, and functions as procedures that
-                your application can perform.
-            </article>
-        </section>
-        <section class="main-section" id="if...else_statement">
-            <header>if...else statement</header>
-            <article>
-                Use the if statement to execute a statement if a logical condition is
-                true. Use the optional else clause to execute a statement if the condition
-                is false. An if statement looks as follows:
-
-                <code>if (condition) { statement_1; } else { statement_2; }</code>
-                condition can be any expression that evaluates to true or false. See
-                Boolean for an explanation of what evaluates to true and false. If
-                condition evaluates to true, statement_1 is executed; otherwise,
-                statement_2 is executed. statement_1 and statement_2 can be any statement,
-                including further nested if statements.
-                <p>
-                    You may also compound the statements using else if to have multiple
-                    conditions tested in sequence, as follows:
-                </p>
-                <code>if (condition_1) { statement_1; } else if (condition_2) { statement_2;
-                  } else if (condition_n) { statement_n; } else { statement_last; }
-                </code>
-                In the case of multiple conditions only the first logical condition which
-                evaluates to true will be executed. To execute multiple statements, group
-                them within a block statement ({ ... }) . In general, it's good practice
-                to always use block statements, especially when nesting if statements:
-
-                <code>if (condition) { statement_1_runs_if_condition_is_true;
-                  statement_2_runs_if_condition_is_true; } else {
-                  statement_3_runs_if_condition_is_false;
-                  statement_4_runs_if_condition_is_false; }</code>
-                It is advisable to not use simple assignments in a conditional expression,
-                because the assignment can be confused with equality when glancing over
-                the code. For example, do not use the following code:
-                <code>if (x = y) { /* statements here */ }</code> If you need to use an
-                assignment in a conditional expression, a common practice is to put
-                additional parentheses around the assignment. For example:
-
-                <code>if ((x = y)) { /* statements here */ }</code>
-            </article>
-        </section>
-        <section class="main-section" id="while_statement">
-            <header>while statement</header>
-            <article>
-                A while statement executes its statements as long as a specified condition
-                evaluates to true. A while statement looks as follows:
-
-                <code>while (condition) statement</code> If the condition becomes false,
-                statement within the loop stops executing and control passes to the
-                statement following the loop.
-
-                <p>
-                    The condition test occurs before statement in the loop is executed. If
-                    the condition returns true, statement is executed and the condition is
-                    tested again. If the condition returns false, execution stops and
-                    control is passed to the statement following while.
-                </p>
-
-                <p>
-                    To execute multiple statements, use a block statement ({ ... }) to group
-                    those statements.
-                </p>
-
-                Example:
-
-                <p>The following while loop iterates as long as n is less than three:</p>
-
-                <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
-                <p>
-                    With each iteration, the loop increments n and adds that value to x.
-                    Therefore, x and n take on the following values:
-                </p>
-
-                <ul>
-                    <li>After the first pass: n = 1 and x = 1</li>
-                    <li>After the second pass: n = 2 and x = 3</li>
-                    <li>After the third pass: n = 3 and x = 6</li>
-                </ul>
-                <p>
-                    After completing the third pass, the condition n &lt; 3 is no longer
-                    true, so the loop terminates.
-                </p>
-            </article>
-        </section>
-        <section class="main-section" id="Function_declarations">
-            <header>Function declarations</header>
-            <article>
-                A function definition (also called a function declaration, or function
-                statement) consists of the function keyword, followed by:
-
-                <ul>
-                    <li>The name of the function.</li>
-                    <li>
-                        A list of arguments to the function, enclosed in parentheses and
-                        separated by commas.
-                    </li>
-                    <li>
-                        The JavaScript statements that define the function, enclosed in curly
-                        brackets, { }.
-                    </li>
-                </ul>
-                <p>
-                    For example, the following code defines a simple function named square:
-                </p>
-
-                <code>function square(number) { return number * number; }</code>
-                <p>
-                    The function square takes one argument, called number. The function
-                    consists of one statement that says to return the argument of the
-                    function (that is, number) multiplied by itself. The return statement
-                    specifies the value returned by the function.
-                </p>
-                <code>return number * number;</code>
-                <p>
-                    Primitive parameters (such as a number) are passed to functions by
-                    value; the value is passed to the function, but if the function changes
-                    the value of the parameter, this change is not reflected globally or in
-                    the calling function.
-                </p>
-            </article>
-        </section>
-        <section class="main-section" id="Reference">
-            <header>Reference</header>
-            <article>
-                <ul>
-                    <li>
-                        All the documentation in this page is taken from
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a>
-                    </li>
-                </ul>
-            </article>
-        </section>
-    </main>
-
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
